@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <style>
+      body {
+          background-color: #f3f5f9;
+          margin: 0;
+          padding: 0;
+          font-family: 'Josefin Sans', sans-serif;
+      }
+      
+      .sidebar ul {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      .bg-danger {
+          background-color: #ff0018!important;
+      }
+
+      .wrapper {
+          display: flex;
+      }
+
+      .sidebar {
+          width: 200px;
+          height: 100%;
+          background: #343a40;
+          padding: 30px 0px;
+          position: fixed;
+          color: #fff;
+      }
+
+      .sidebar h2 {
+          text-transform: uppercase;
+          text-align: center;
+          margin-bottom: 30px;
+      }
+
+      .sidebar ul li {
+          padding: 15px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .sidebar ul li a {
+          color: #bdb8d7;
+          display: block;
+          text-decoration: none;
+      }
+
+      .sidebar ul li a i {
+            margin-right: 10px;
+        }
+
+      .sidebar ul li:hover {
+          background-color: #594f8d;
+      }
+
+      .sidebar ul li:hover a {
+          color: #fff;
+      }
+
+      .main_content {
+          width: 100%;
+          margin-left: 200px;
+      }
+
+      .main_content .header {
+          padding: 20px;
+          background: #fff;
+          color: #717171;
+          border-bottom: 1px solid #e0e4e8;
+      }
+
+      .main_content .info {
+          margin: 20px;
+          color: #717171;
+          line-height: 25px;
+      }
+
+      .main_content .info div {
+          margin-bottom: 20px;
+      }
+
+      .fa-sign-out-alt {
+          color: white;
+          font-size: 2ex;
+      }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-danger">
+        <a style="color:white;" class="navbar-brand" href=""><i class="fab fa-gratipay"></i>&nbsp;<font face="Comic sans MS" size="4">Blood Bank Management System</font></a>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../logout.php">Logout &nbsp; <i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="admin_dashboard.php"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="admin_donor.php"><i class="fas fa-user"></i>Donor</a></li>
+                <li><a href="admin_donation.php"><i class="fas fa-hand-holding-medical"></i>Donations</a></li>
+                <li><a href="admin_request.php"><i class="fas fa-sync-alt"></i>Blood Requests</a></li>
+                <li><a href="blood_stock.php"><i class="fas fa-hand-holding-water"></i>Blood Stock</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

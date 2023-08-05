@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+center {
+    margin-top: 30px;
+}
+
+h1 {
+    color: #428bca;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 220px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #428bca;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3071a9;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}
